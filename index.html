@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WTF | Life is weird</title>
+    <meta name="description" content="WTF is a Solana memecoin. Life is weird. You should learn to question everything." />
+    <meta property="og:title" content="WTF" />
+    <meta property="og:description" content="Life is weird. You should learn to question everything." />
+    <meta property="og:image" content="assets/logo.png" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="stage" aria-hidden="true">
+      <canvas id="burst-field"></canvas>
+      <div class="void-bloom"></div>
+      <div class="void-vignette"></div>
+      <div class="grain"></div>
+    </div>
+
+    <header class="nav">
+      <a class="brand" href="#hero">
+        <img src="assets/logo.png" alt="WTF logo" />
+        <span>WTF</span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#howtobuy">How to buy</a>
+        <a href="#chart">Chart</a>
+        <a href="#joinus">Join us</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="icon-btn" data-link="x" href="https://x.com/WTFmemesol" target="_blank" rel="noopener noreferrer" aria-label="WTF on X">
+          <img src="assets/icons/x.svg" alt="" />
+        </a>
+        <a class="pill-btn" data-link="buy" href="https://swap.pump.fun/" target="_blank" rel="noopener noreferrer">Buy $WTF</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-orbit" aria-hidden="true">
+          <span>WTF</span><span>WTF</span><span>WTF</span><span>WTF</span>
+          <span>wtf</span><span>WTF</span><span>WTF</span><span>wtf</span>
+        </div>
+        <div class="hero-core">
+          <div class="mascot-well">
+            <div class="mascot-halo"></div>
+            <img class="mascot" src="assets/logo.png" alt="WTF exploding mind mascot" />
+            <div class="steam-puff p1"></div>
+            <div class="steam-puff p2"></div>
+            <div class="steam-puff p3"></div>
+          </div>
+          <p class="eyebrow">Solana memecoin</p>
+          <h1>WTF</h1>
+          <p class="symbol-chip">$WTF</p>
+          <p class="tagline">Life is weird. You should learn to question everything.</p>
+          <div class="hero-cta">
+            <a class="cta gold" data-link="buy" href="https://swap.pump.fun/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/pumpswap.svg" alt="" />
+              <span>PumpSwap</span>
+            </a>
+            <a class="cta glass" data-link="chart" href="https://dexscreener.com/solana" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/dexscreener.svg" alt="" />
+              <span>DexScreener</span>
+            </a>
+            <a class="cta glass" data-link="x" href="https://x.com/WTFmemesol" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/x.svg" alt="" />
+              <span>Follow X</span>
+            </a>
+          </div>
+          <button class="ca-chip" id="ca-chip" type="button">
+            <span class="ca-label">CA</span>
+            <span class="ca-value" id="ca-value">dropping soon</span>
+          </button>
+        </div>
+        <a class="scroll-hint" href="#about">Question below</a>
+      </section>
+
+      <section class="about" id="about">
+        <div class="section-head">
+          <p class="kicker">About</p>
+          <h2>The mind did not ask permission.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="manifesto">
+            <img src="assets/logo.png" alt="" />
+            <blockquote>
+              Life is weird. You should learn to question everything.
+            </blockquote>
+            <p>
+              WTF is the sound a brain makes when the plot stops making sense.
+              Born on Solana, it treats confusion as a public good. The face
+              stays shocked. The steam keeps rising. The questions do not stop.
+            </p>
+          </article>
+          <div class="inquiry-stack">
+            <article class="inquiry">
+              <span>01</span>
+              <h3>Weird is the baseline</h3>
+              <p>Charts, timelines, and group chats all wobble. WTF does not pretend the room is normal.</p>
+            </article>
+            <article class="inquiry">
+              <span>02</span>
+              <h3>Ask until it sparks</h3>
+              <p>Every rumor, every candle, every “trust me.” If it cannot survive a question, it was never solid.</p>
+            </article>
+            <article class="inquiry">
+              <span>03</span>
+              <h3>Stay in the burst</h3>
+              <p>The brain popped. The cubes are still flying. That is the culture: loud, gold, and slightly unhinged.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="howtobuy" id="howtobuy">
+        <div class="section-head">
+          <p class="kicker">How to buy</p>
+          <h2>Four moves. Zero ceremony.</h2>
+        </div>
+        <ol class="fuse">
+          <li class="fuse-step">
+            <a class="fuse-node" href="https://phantom.app/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/phantom.svg" alt="" />
+            </a>
+            <div>
+              <p class="step-num">Step 01</p>
+              <h3>Open a wallet</h3>
+              <p>Install Phantom, create a wallet, and keep the phrase offline. That is the door.</p>
+            </div>
+          </li>
+          <li class="fuse-step">
+            <div class="fuse-node sol">
+              <img src="assets/icons/solana.svg" alt="" />
+            </div>
+            <div>
+              <p class="step-num">Step 02</p>
+              <h3>Load SOL</h3>
+              <p>Bridge or buy SOL, then send it to Phantom. Gas and the swap both start here.</p>
+            </div>
+          </li>
+          <li class="fuse-step">
+            <a class="fuse-node" data-link="buy" href="https://swap.pump.fun/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/pumpswap.svg" alt="" />
+            </a>
+            <div>
+              <p class="step-num">Step 03</p>
+              <h3>Hit PumpSwap</h3>
+              <p>Connect the wallet, paste the WTF contract, and size the bag you can actually sit with.</p>
+            </div>
+          </li>
+          <li class="fuse-step">
+            <a class="fuse-node" data-link="chart" href="https://dexscreener.com/solana" target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/dexscreener.svg" alt="" />
+            </a>
+            <div>
+              <p class="step-num">Step 04</p>
+              <h3>Swap and confirm</h3>
+              <p>Review the route, confirm the transaction, then watch the live Solana chart.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="chart" id="chart">
+        <div class="section-head">
+          <p class="kicker">Chart</p>
+          <h2>The live argument.</h2>
+        </div>
+        <div class="chart-portal">
+          <iframe
+            id="dex-embed"
+            title="DexScreener Solana chart for WTF"
+            src="https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartDefaultOnMobile=1&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="joinus" id="joinus">
+        <div class="section-head">
+          <p class="kicker">Join us</p>
+          <h2>Bring your questions.</h2>
+        </div>
+        <figure class="billboard">
+          <img src="assets/banner.png" alt="WTF banner with exploding mind and flying letters" />
+        </figure>
+        <div class="join-row">
+          <a class="join-card" data-link="x" href="https://x.com/WTFmemesol" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/x.svg" alt="" />
+            <strong>X</strong>
+            <span>@WTFmemesol</span>
+          </a>
+          <a class="join-card" data-link="buy" href="https://swap.pump.fun/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/pumpswap.svg" alt="" />
+            <strong>PumpSwap</strong>
+            <span>Trade $WTF</span>
+          </a>
+          <a class="join-card" data-link="chart" href="https://dexscreener.com/solana" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/dexscreener.svg" alt="" />
+            <strong>DexScreener</strong>
+            <span>Solana chart</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <a class="brand" href="#hero">
+        <img src="assets/logo.png" alt="" />
+        <span>WTF</span>
+      </a>
+      <p>Life is weird. You should learn to question everything.</p>
+      <p class="fine">Memecoin on Solana. Nothing here is financial advice.</p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -7,3 +7,6 @@ assets/_verify/
 assets/logo-raw.png
 Design sans titre*.png
 20260322_*.png
+
+.vercel
+.env*
